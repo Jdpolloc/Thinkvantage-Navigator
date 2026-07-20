@@ -1,0 +1,45 @@
+{
+  "name": "thinkvantage-navigator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron-main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:exe": "vite build && electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.thinkvantage.navigator",
+    "productName": "ThinkVantage Navigator",
+    "directories": {
+      "output": "dist_electron"
+    },
+    "files": [
+      "dist/**/*",
+      "!dist/**/*.exe",
+      "electron-main.cjs"
+    ],
+    "win": {
+      "target": [
+        "zip"
+      ],
+      "icon": "public/icon.png"
+    }
+  },
+  "dependencies": {
+    "lucide-react": "^1.25.0",
+    "motion": "^12.42.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

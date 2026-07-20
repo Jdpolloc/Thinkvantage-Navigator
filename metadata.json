@@ -1,0 +1,8 @@
+{
+  "name": "ThinkVantage Navigator",
+  "description": "A fun game designed to master the iconic ThinkPad TrackPoint. Navigate the red dot through challenging mazes and prove your precision and speed!",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
